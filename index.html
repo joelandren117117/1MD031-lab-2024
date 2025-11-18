@@ -1,32 +1,176 @@
 <!DOCTYPE html>
-<html lang="sv">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Burgers Online</title>
+  <title>Burgerstore</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="/css/style.css" />
 </head>
 <body>
   <header>
-    <h1>Välkommen till Burgers Online</h1>
+    <h1>Welcome to Burgerstore Online</h1>
+    <img src="https://s3.envato.com/files/f777f88d-7d92-453d-bc20-39c1a94089e5/inline_image_preview.jpg" alt="Interior of a burger restaurant" />
   </header>
-
-  <nav>
-    <h3>Menu items</h3>
-  </nav>
-
   <main>
-    <section>
-      <h5>Heisenbirgir</h5>
+    <section id="burgers">
+      <h2>Select burger</h2>
+      <p>This is where you execute burger selection</p>
+      <div class="burger-grid">
+        <div class="burger">
+          <h3>The Fire Burger</h3>
+          <img
+            src="https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-cheeseburger-NEW:product-header-mobile?wid=829&hei=478&dpr=off"
+            alt="The Fire Burger"
+            width="250"
+          />
+          <ul>
+            <li>Kobe beef of the highest quality</li>
+            <li>Covered in fancy cheese (contains <span class="allergen">lactose</span>)</li>
+            <li>Cold-leavened sourdough bread (contains gluten)</li>
+          </ul>
+        </div>
+        <div class="burger">
+          <h3>Fried Turkey Burger</h3>
+          <img
+            src="https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-double-cheeseburger-NEW:product-header-mobile?wid=829&hei=478&dpr=off"
+            alt="Fried Turkey Burger"
+            width="250"
+          />
+          <ul>
+            <li>Deep fried Turkish turkey</li>
+            <li>A slice of pink stuff (contains lactose)</li>
+            <li>Shake-n-bake gluten-free bread</li>
+          </ul>
+        </div>
+        <div class="burger">
+          <h3>A Double w/ Cheese</h3>
+          <img
+            src="https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-triple-cheeseburger-NEW:product-header-mobile?wid=829&hei=478&dpr=off"
+            alt="A Double with Cheese"
+            width="250"
+          />
+          <ul>
+            <li>Two layers of pure meat</li>
+            <li>Lots of yummy cheese (contains lactose)</li>
+            <li>Sweet bread bun (contains gluten)</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <img src="/img/heisenburgir.jpeg" alt="Heisenbirgir" width="320" />
+    <section id="contact">
+      <h2>Customer information</h2>
+      <p>This is where you provide necessary information</p>
+
+      <form>
+        <fieldset>
+          <legend>Delivery information:</legend>
+
+          <p>
+            <label for="full-name">Full name</label><br />
+            <input
+              type="text"
+              id="full-name"
+              name="full-name"
+              required="required"
+              placeholder="First- and Last name"
+            />
+          </p>
+
+          <p>
+            <label for="email">E-mail</label><br />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required="required"
+              placeholder="E-mail address"
+            />
+          </p>
+
+          <p>
+            <label for="street">Street</label><br />
+            <input
+              type="text"
+              id="street"
+              name="street"
+              required="required"
+              placeholder="Street name"
+            />
+          </p>
+
+          <p>
+            <label for="house-number">House Number</label><br />
+            <input
+              type="number"
+              id="house-number"
+              name="house-number"
+              required="required"
+              placeholder="House number"
+            />
+          </p>
+
+          <p>
+            <label for="payment">Payment method</label><br />
+            <select id="payment" name="payment">
+              <option selected="selected">Credit card</option>
+              <option>Swish</option>
+              <option>Cash</option>
+              <option>PayPal</option>
+            </select>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Gender</legend>
+
+          <p>
+            <label for="gender-male">
+              <input
+                type="radio"
+                id="gender-male"
+                name="gender"
+                value="male"
+                checked="checked"
+              />
+              Male
+            </label><br />
+
+            <label for="gender-female">
+              <input
+                type="radio"
+                id="gender-female"
+                name="gender"
+                value="female"
+              />
+              Female
+            </label><br />
+
+            <label for="gender-none">
+              <input
+                type="radio"
+                id="gender-none"
+                name="gender"
+                value="no-answer"
+              />
+              Do not wish to provide
+            </label>
+          </p>
+        </fieldset>
+      </form>
     </section>
+    <button type="submit">
+      <img
+        src="https://png.pngtree.com/png-clipart/20200225/original/pngtree-green-check-mark-icon-flat-style-png-image_5253210.jpg"
+        alt="Delivery icon"
+      />
+      Place my order!
+    </button>
   </main>
 
   <footer>
-    <hr>
-    End notes
+    <hr />
+    <p>&copy; Joels Burgers Inc.</p>
   </footer>
 </body>
 </html>
