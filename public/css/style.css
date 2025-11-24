@@ -35,19 +35,20 @@ header {
 header img {
     width: 100%;
     height: auto;
-    display: block;
-    opacity: 0.6;  
+    display: block; 
 }
 
 
 header h1 {
-    position: absolute;   
-    top: 20px;            
-    left: 20px;           
+    position: absolute; 
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);         
     margin: 0;
     padding: 0.5rem 1rem; 
-    color: white;
-    text-shadow: 0 0 4px black; 
+    color: rgb(255, 255, 255);      
+    text-align: center;
+    font-size: clamp(2rem, 6vw, 4rem);
 }
 section {
     margin: 2rem 1rem;  
@@ -82,13 +83,24 @@ nav li {
     text-transform: uppercase;
 }
 .burger {
-    padding: 1em;
-    margin: 1em;
+    padding: 0.5em;
+    margin: 0.25em;
+}
+.burger ul {
+    font-size: 0.85rem;   
+    line-height: 1.3;     
+    padding-left: 1.1rem; 
 }
 .burger-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 1rem;                             
+    gap: 0.5rem;
+}
+.burger img {
+    max-width: 100%;   
+    height: auto;
+    display: block;
+    margin: 0 auto;    
 }
 #burgers {
     background-color: rgb(221, 209, 41);
