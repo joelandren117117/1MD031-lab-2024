@@ -1,21 +1,21 @@
 [{
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Single Cheeseburger", 
+    "kCal": 100, 
+    "url": "https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-cheeseburger-NEW:product-header-mobile?wid=829&hei=478&dpr=off",
     "lactose": false, 
     "gluten": false
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
+    "name": "Double Cheeseburger", 
+    "kCal": 200, 
+    "url": "https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-double-cheeseburger-NEW:product-header-mobile?wid=829&hei=478&dpr=off",
+    "lactose": true, 
     "gluten": false
 },
 {
-    "name": "Veggie Bliss", 
-    "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
+    "name": "Triple Cheeseburger", 
+    "kCal": 300, 
+    "url":"https://s7d1.scene7.com/is/image/mcdonalds/mcd-sv-products-burgers-triple-cheeseburger-NEW:product-header-mobile?wid=829&hei=478&dpr=off",
     "lactose": false, 
-    "gluten": false
+    "gluten": true
 }]
